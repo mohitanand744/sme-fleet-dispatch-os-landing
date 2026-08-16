@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-dark: #0E1528;
+  --color-theme-darker: #080D1A;
+  --color-theme-card: #131D33;
+  --color-theme-card-hover: #192644;
+  --color-main-dark: #4C5E74;
+  --color-main-light: #D5E2EB;
+  --color-main-white: #E9F0F8;
+  --color-main-dark-hover: #3a495b;
+  --color-main-dark-muted: #8E9FB5;
+  --color-brand-blue: #3B82F6;
+  --color-brand-cyan: #38BDF8;
+}
+
+:root {
+  --background: #0E1528;
+  --foreground: #F8FAFC;
+  --main-dark: #4C5E74;
+  --main-light: #D5E2EB;
+  --main-white: #E9F0F8;
+  --theme-dark: #0E1528;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+html,
+body {
+  background-color: #0E1528;
+  color: #F8FAFC;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+  color-scheme: dark;
+}
+
+/* Custom Theme-Matched Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080D1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233354;
+  border-radius: 9999px;
+  border: 2px solid #080D1A;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Firefox Scrollbar Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #233354 #080D1A;
+}
+
+/* Custom dark glow and grid patterns */
+.bg-grid-pattern-dark {
+  background-image: radial-gradient(rgba(213, 226, 235, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Tech Grid Box Pattern */
+.bg-grid-boxes {
+  background-size: 52px 52px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+.floating-nav {
+  background: rgba(14, 21, 40, 0.65);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.dark-glass-card {
+  background: rgba(19, 29, 51, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark-glass-card:hover {
+  border-color: rgba(142, 159, 181, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+}
