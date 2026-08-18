@@ -176,20 +176,18 @@ export default function DispatchCompanySignupPage() {
                   return (
                     <div key={s.num} className="relative z-10 flex flex-col items-center gap-1.5">
                       <div
-                        className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
-                          isCompleted
-                            ? "bg-indigo-600 text-white shadow-lg shadow-indigo-500/30"
-                            : isCurrent
+                        className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${isCompleted
+                          ? "bg-indigo-600 text-white shadow-lg shadow-indigo-500/30"
+                          : isCurrent
                             ? "bg-white text-[#0E1528] ring-4 ring-indigo-500/30 font-extrabold"
                             : "bg-[#0E1528] text-slate-400 border border-white/20"
-                        }`}
+                          }`}
                       >
                         {isCompleted ? <Check className="w-4 h-4" /> : s.num}
                       </div>
                       <span
-                        className={`text-[11px] font-bold uppercase tracking-wider ${
-                          isCurrent ? "text-indigo-300" : isCompleted ? "text-slate-300" : "text-slate-500"
-                        }`}
+                        className={`text-[11px] font-bold uppercase tracking-wider ${isCurrent ? "text-indigo-300" : isCompleted ? "text-slate-300" : "text-slate-500"
+                          }`}
                       >
                         {s.label}
                       </span>
@@ -282,7 +280,7 @@ export default function DispatchCompanySignupPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Tax ID / EIN or Broker Authority
+                          Tax ID / EIN (Optional)
                         </label>
                         <input
                           type="text"
@@ -294,7 +292,7 @@ export default function DispatchCompanySignupPage() {
                       </div>
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Agency Dispatcher Count
+                          Dispatcher Capacity
                         </label>
                         <select
                           value={formData.dispatcherCount}
@@ -312,7 +310,7 @@ export default function DispatchCompanySignupPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Primary Freight Focus
+                          Freight Focus
                         </label>
                         <select
                           value={formData.primaryMarket}
@@ -327,7 +325,7 @@ export default function DispatchCompanySignupPage() {
                       </div>
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Agency Office Phone *
+                          Office Phone *
                         </label>
                         <input
                           type="tel"
@@ -363,7 +361,7 @@ export default function DispatchCompanySignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Office Street Address *
+                        Address Line 1 *
                       </label>
                       <input
                         type="text"
@@ -377,7 +375,7 @@ export default function DispatchCompanySignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Suite / Floor / Unit (Optional)
+                        Address Line 2 (Optional)
                       </label>
                       <input
                         type="text"
@@ -450,7 +448,7 @@ export default function DispatchCompanySignupPage() {
                   </motion.div>
                 )}
 
-                {/* STEP 3: Agency Master Admin Account */}
+                {/* STEP 3: Agency Admin Account */}
                 {currentStep === 3 && (
                   <motion.div
                     key="step3"
@@ -462,7 +460,7 @@ export default function DispatchCompanySignupPage() {
                   >
                     <div className="mb-4">
                       <h2 className="text-xl sm:text-2xl font-extrabold text-white">
-                        Step 3: Agency Master Admin Account
+                        Step 3: Agency Admin Account
                       </h2>
                       <p className="text-xs sm:text-sm text-slate-300 mt-1">
                         Create the primary agency director login credentials to manage dispatchers and fleet clients.
@@ -517,7 +515,7 @@ export default function DispatchCompanySignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Admin Direct Mobile Phone *
+                        ADMIN MOBILE PHONE *
                       </label>
                       <div className="relative">
                         <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -535,7 +533,7 @@ export default function DispatchCompanySignupPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Create Password *
+                          Password *
                         </label>
                         <div className="relative">
                           <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -594,8 +592,8 @@ export default function DispatchCompanySignupPage() {
                     {currentStep === 1
                       ? "Next: Business Address"
                       : currentStep === 2
-                      ? "Next: Admin Details"
-                      : "Create Agency Workspace"}
+                        ? "Next: Admin Details"
+                        : "Create Agency Workspace"}
                   </span>
                   <ArrowRight className="w-4 h-4 text-[#0E1528]" />
                 </Button>

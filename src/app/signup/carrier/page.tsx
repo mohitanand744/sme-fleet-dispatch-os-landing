@@ -179,20 +179,18 @@ export default function CarrierSignupPage() {
                   return (
                     <div key={s.num} className="relative z-10 flex flex-col items-center gap-1.5">
                       <div
-                        className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
-                          isCompleted
-                            ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30"
-                            : isCurrent
+                        className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${isCompleted
+                          ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30"
+                          : isCurrent
                             ? "bg-white text-[#0E1528] ring-4 ring-blue-500/30 font-extrabold"
                             : "bg-[#0E1528] text-slate-400 border border-white/20"
-                        }`}
+                          }`}
                       >
                         {isCompleted ? <Check className="w-4 h-4" /> : s.num}
                       </div>
                       <span
-                        className={`text-[11px] font-bold uppercase tracking-wider ${
-                          isCurrent ? "text-blue-300" : isCompleted ? "text-slate-300" : "text-slate-500"
-                        }`}
+                        className={`text-[11px] font-bold uppercase tracking-wider ${isCurrent ? "text-blue-300" : isCompleted ? "text-slate-300" : "text-slate-500"
+                          }`}
                       >
                         {s.label}
                       </span>
@@ -314,7 +312,7 @@ export default function CarrierSignupPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Fleet Size (Active Power Units)
+                          Fleet Size
                         </label>
                         <select
                           value={formData.fleetSize}
@@ -329,7 +327,7 @@ export default function CarrierSignupPage() {
                       </div>
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Primary Equipment Type
+                          Equipment Type
                         </label>
                         <select
                           value={formData.equipmentType}
@@ -381,7 +379,7 @@ export default function CarrierSignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Street Address *
+                        Address Line 1 *
                       </label>
                       <input
                         type="text"
@@ -395,7 +393,7 @@ export default function CarrierSignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Suite / Unit / Yard # (Optional)
+                        Address Line 2 (Optional)
                       </label>
                       <input
                         type="text"
@@ -484,7 +482,7 @@ export default function CarrierSignupPage() {
                         Step 3: Primary Admin Account
                       </h2>
                       <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                        Create the master administrator login credentials to manage your fleet workspace.
+                        Create the Administrator login credentials to manage your fleet workspace.
                       </p>
                     </div>
 
@@ -536,7 +534,7 @@ export default function CarrierSignupPage() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        Admin Direct Mobile Phone *
+                        ADMIN MOBILE PHONE *
                       </label>
                       <div className="relative">
                         <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -554,7 +552,7 @@ export default function CarrierSignupPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                          Create Password *
+                          Password *
                         </label>
                         <div className="relative">
                           <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -613,8 +611,8 @@ export default function CarrierSignupPage() {
                     {currentStep === 1
                       ? "Next: Business Address"
                       : currentStep === 2
-                      ? "Next: Admin Details"
-                      : "Complete Carrier Registration"}
+                        ? "Next: Admin Details"
+                        : "Complete Carrier Registration"}
                   </span>
                   <ArrowRight className="w-4 h-4 text-[#0E1528]" />
                 </Button>

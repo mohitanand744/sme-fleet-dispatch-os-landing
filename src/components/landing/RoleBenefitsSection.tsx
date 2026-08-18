@@ -122,12 +122,12 @@ const tabsData: RoleTabInfo[] = [
     name: "Drivers",
     badge: "Frictionless Mobile Flow",
     icon: User,
-    title: "Zero app clutter. Get load details and submit PODs via Telegram.",
+    title: "Direct Telegram Dispatch. Get load details and submit PODs in chat.",
     description:
-      "Never fight with a clunky mobile app again. Manage your entire dispatch lifecycle through simple, quick-tap Telegram messages.",
+      "Manage your entire dispatch lifecycle through simple, quick-tap Telegram messages with instant rate packet and POD syncing.",
     bullets: [
       {
-        title: "App-Free Dispatch via Telegram",
+        title: "Instant Dispatch via Telegram",
         desc: "Receive pickup addresses, appointment times, and reference numbers in clean mobile cards.",
       },
       {

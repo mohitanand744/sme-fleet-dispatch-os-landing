@@ -109,20 +109,22 @@ export default function DispatcherSignupPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                  First Name
+                  First Name *
                 </label>
                 <input
                   type="text"
+                  required
                   placeholder="Jane"
                   className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
                 />
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                  Last Name
+                  Last Name *
                 </label>
                 <input
                   type="text"
+                  required
                   placeholder="Doe"
                   className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
                 />
@@ -140,15 +142,54 @@ export default function DispatcherSignupPage() {
               </select>
             </div>
 
-            <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                Email Address
-              </label>
-              <input
-                type="email"
-                placeholder="dispatcher@email.com"
-                className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
-              />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  required
+                  placeholder="dispatcher@email.com"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                  Phone Number *
+                </label>
+                <input
+                  type="tel"
+                  required
+                  placeholder="+1 (555) 000-0000"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                  Password *
+                </label>
+                <input
+                  type="password"
+                  required
+                  placeholder="••••••••••••"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                  Confirm Password *
+                </label>
+                <input
+                  type="password"
+                  required
+                  placeholder="••••••••••••"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm"
+                />
+              </div>
             </div>
 
             <Button className="w-full bg-white text-[#0E1528] hover:bg-slate-100 py-6 rounded-xl text-base font-bold shadow-xl shadow-white/10 mt-4 hover:scale-[1.02] transition-all">

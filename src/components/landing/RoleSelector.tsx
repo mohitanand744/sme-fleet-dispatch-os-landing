@@ -91,7 +91,7 @@ const roleOptions: RoleCardData[] = [
     title: "Driver",
     roleBadge: "Commercial Operators",
     tag: {
-      label: "App-Free Mobile",
+      label: "Telegram Driver Bot",
       badgeStyle: "bg-emerald-500/20 text-emerald-300 border-emerald-400/35",
     },
     icon: User,

@@ -175,7 +175,7 @@ export function BentoGridSection() {
             </div>
 
             <div className="pt-4 border-t border-white/10 text-xs font-mono text-emerald-300 flex items-center gap-2">
-              <span>✔ No driver app downloads required</span>
+              <span>✔ Direct Telegram bot dispatch & photo sync</span>
             </div>
           </motion.div>
 

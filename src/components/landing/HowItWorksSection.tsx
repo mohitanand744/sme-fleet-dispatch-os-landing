@@ -109,13 +109,13 @@ const stepsData: StepItem[] = [
   {
     id: 3,
     stepNum: "03",
-    badge: "Frictionless Updates",
-    title: "App-Free Driver Updates",
-    subtitle: "Telegram integration with one-tap check-calls",
+    badge: "Telegram Bot Sync",
+    title: "Telegram Driver Updates",
+    subtitle: "Real-time dispatch directly through Telegram",
     description:
-      "Drivers don't need to download another battery-draining app. They receive load packets, tap 'Loaded / Arrived' buttons, and snap photo PODs directly through familiar Telegram chats.",
+      "Drivers receive complete load packets, tap 'Loaded / Arrived' buttons, and submit signed photo PODs directly through Telegram chats.",
     highlights: [
-      "Zero driver app downloads or password setups required",
+      "Instant Telegram bot assignment & one-tap load acceptance",
       "One-tap location check-ins & timestamped GPS logging",
       "Instant camera scanning for BOL & Proof of Delivery (POD)",
     ],

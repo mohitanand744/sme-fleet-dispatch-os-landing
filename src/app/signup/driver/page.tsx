@@ -109,40 +109,40 @@ export default function DriverSignupPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                  Full Legal Name
+                  First Name *
                 </label>
                 <input
                   type="text"
-                  placeholder="John Smith"
+                  placeholder="John"
                   className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm"
                 />
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                  CDL Class
+                  Last Name *
                 </label>
-                <select className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528] text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm">
-                  <option>Class A CDL</option>
-                  <option>Class B CDL</option>
-                  <option>Non-CDL Commercial</option>
-                </select>
+                <input
+                  type="text"
+                  placeholder="Smith"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm"
+                />
               </div>
             </div>
 
             <div>
               <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                Company Invite Code (Optional)
+                Email Address *
               </label>
               <input
-                type="text"
-                placeholder="e.g. FLEET-8821"
+                type="email"
+                placeholder="john.smith@driver.com"
                 className="w-full px-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-sm"
               />
             </div>
 
             <div>
               <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                Phone Number (for SMS dispatch alerts)
+                Phone Number *
               </label>
               <input
                 type="tel"
