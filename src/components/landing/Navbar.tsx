@@ -70,11 +70,11 @@ export function Navbar() {
               About
             </a>
             <a
-              href="#roles"
-              onClick={(e) => scrollToSection(e, "roles")}
+              href="#benefits"
+              onClick={(e) => scrollToSection(e, "benefits")}
               className="text-slate-300 hover:text-white px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors font-medium cursor-pointer"
             >
-              Roles
+              Features
             </a>
             <button
               onClick={() => setContactModalOpen(true)}
@@ -101,7 +101,7 @@ export function Navbar() {
               </Button>
             </Link>
 
-            <a href="#roles" onClick={(e) => scrollToSection(e, "roles")}>
+            <Link href="/signup">
               <Button
                 size="sm"
                 className="rounded-full bg-main-white text-[#0E1528] hover:bg-white shadow-lg shadow-blue-500/20 text-xs font-bold px-4 h-9 gap-1.5 hover:scale-[1.02] transition-transform"
@@ -109,19 +109,19 @@ export function Navbar() {
                 <span>Get Started</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Trigger */}
           <div className="flex md:hidden items-center gap-2">
-            <a href="#roles" onClick={(e) => scrollToSection(e, "roles")}>
+            <Link href="/signup">
               <Button
                 size="sm"
                 className="rounded-full bg-main-white text-[#0E1528] hover:bg-white text-xs font-bold px-3 h-8"
               >
                 Get Started
               </Button>
-            </a>
+            </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
@@ -156,14 +156,14 @@ export function Navbar() {
               </a>
 
               <a
-                href="#roles"
+                href="#benefits"
                 onClick={(e) => {
                   setMobileMenuOpen(false);
-                  scrollToSection(e, "roles");
+                  scrollToSection(e, "benefits");
                 }}
                 className="block px-3 py-2 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
               >
-                Role Gateways
+                Platform Features
               </a>
 
               <button
@@ -185,17 +185,14 @@ export function Navbar() {
                     Sign In
                   </Button>
                 </Link>
-                <a
-                  href="#roles"
-                  onClick={(e) => {
-                    setMobileMenuOpen(false);
-                    scrollToSection(e, "roles");
-                  }}
+                <Link
+                  href="/signup"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   <Button className="w-full justify-center rounded-full bg-main-white text-[#0E1528] hover:bg-white text-xs font-bold h-10 shadow-lg">
                     Get Started
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -42,23 +42,23 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/signup/carrier" className="text-slate-400 hover:text-white transition-colors hover:underline">
-                  Carrier Company
+                <Link href="/signup?role=carrier" className="text-slate-400 hover:text-white transition-colors hover:underline">
+                  Carrier Company Registration
                 </Link>
               </li>
               <li>
-                <Link href="/signup/dispatch-company" className="text-slate-400 hover:text-white transition-colors hover:underline">
-                  Dispatching Agency
+                <Link href="/signup?role=dispatch-company" className="text-slate-400 hover:text-white transition-colors hover:underline">
+                  Dispatching Agency Registration
                 </Link>
               </li>
               <li>
-                <Link href="/signup/dispatcher" className="text-slate-400 hover:text-white transition-colors hover:underline">
-                  Independent Dispatcher
+                <Link href="/signup?role=dispatcher" className="text-slate-400 hover:text-white transition-colors hover:underline">
+                  Independent Dispatcher Registration
                 </Link>
               </li>
               <li>
-                <Link href="/signup/driver" className="text-slate-400 hover:text-white transition-colors hover:underline">
-                  Commercial Driver
+                <Link href="/signup?role=driver" className="text-slate-400 hover:text-white transition-colors hover:underline">
+                  Commercial Driver Registration
                 </Link>
               </li>
             </ul>

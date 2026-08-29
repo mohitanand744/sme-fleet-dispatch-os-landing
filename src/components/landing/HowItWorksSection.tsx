@@ -321,12 +321,12 @@ export function HowItWorksSection() {
 
                 {/* Action & Step Switch Buttons */}
                 <div className="pt-4 flex flex-wrap items-center gap-3">
-                  <Link href="#roles">
+                  <Link href="/signup">
                     <Button
                       size="default"
                       className="rounded-xl bg-white text-[#0E1528] hover:bg-slate-100 font-bold text-xs sm:text-sm px-6 h-12 shadow-lg gap-2 group"
                     >
-                      <span>Try Step {currentStep.stepNum} Flow</span>
+                      <span>Get Started with SME OS</span>
                       <ArrowRight className="w-4 h-4 text-[#0E1528] transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>

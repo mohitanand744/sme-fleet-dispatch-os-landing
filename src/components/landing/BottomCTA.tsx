@@ -46,7 +46,7 @@ export function BottomCTA() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Link href="#roles" className="w-full sm:w-auto">
+            <Link href="/signup" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-[#0E1528] hover:bg-slate-100 shadow-2xl shadow-white/20 text-base font-bold px-9 py-7 rounded-2xl group flex items-center justify-center gap-2 hover:scale-[1.03] transition-all"

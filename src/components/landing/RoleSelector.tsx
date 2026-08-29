@@ -47,8 +47,8 @@ const roleOptions: RoleCardData[] = [
       "Driver onboarding & compliance tracking",
       "Direct integration with dispatch agencies",
     ],
-    href: "/signup/carrier",
-    ctaText: "Sign Up as Carrier",
+    href: "/signup?role=carrier",
+    ctaText: "Get Started as Carrier",
   },
   {
     id: "dispatch-company",
@@ -65,8 +65,8 @@ const roleOptions: RoleCardData[] = [
       "Carrier fleet matching & rate negotiation",
       "Automated invoicing & commission splits",
     ],
-    href: "/signup/dispatch-company",
-    ctaText: "Register Agency",
+    href: "/signup?role=dispatch-company",
+    ctaText: "Get Started as Agency",
   },
   {
     id: "dispatcher",
@@ -83,8 +83,8 @@ const roleOptions: RoleCardData[] = [
       "Direct carrier messaging & check-calls",
       "Flexible independent or team profiles",
     ],
-    href: "/signup/dispatcher",
-    ctaText: "Join as Dispatcher",
+    href: "/signup?role=dispatcher",
+    ctaText: "Get Started as Dispatcher",
   },
   {
     id: "driver",
@@ -101,8 +101,8 @@ const roleOptions: RoleCardData[] = [
       "Fast proof-of-delivery uploads",
       "Direct payroll & settlement visibility",
     ],
-    href: "/signup/driver",
-    ctaText: "Register as Driver",
+    href: "/signup?role=driver",
+    ctaText: "Get Started as Driver",
   },
 ];
 

@@ -5,7 +5,6 @@ import { IntegrationMarquee } from "@/components/landing/IntegrationMarquee";
 import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
 import { BentoGridSection } from "@/components/landing/BentoGridSection";
 import { RoleBenefitsSection } from "@/components/landing/RoleBenefitsSection";
-import { RoleSelector } from "@/components/landing/RoleSelector";
 import { BottomCTA } from "@/components/landing/BottomCTA";
 import { Footer } from "@/components/landing/Footer";
 
@@ -38,14 +37,11 @@ export default function LandingPage() {
         {/* 6. Role-Specific Benefits Tabs (Fleet Owners, Dispatchers, Drivers) */}
         <RoleBenefitsSection />
 
-        {/* 7. Core Role Selector Gateway (4 Interactive Cards) */}
-        <RoleSelector />
-
-        {/* 8. Bottom CTA Banner (80% Centered Padded Glass Container) */}
+        {/* 7. Bottom CTA Banner (80% Centered Padded Glass Container) */}
         <BottomCTA />
       </main>
 
-      {/* 9. Sleek Dark Footer */}
+      {/* 8. Sleek Dark Footer */}
       <Footer />
     </div>
   );

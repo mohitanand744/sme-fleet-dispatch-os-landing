@@ -1,14 +1,42 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { ArrowLeft, Lock, Mail, ShieldCheck, Eye, EyeOff } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ArrowLeft,
+  Lock,
+  Mail,
+  ShieldCheck,
+  Eye,
+  EyeOff,
+  CheckCircle2,
+  Sparkles,
+  ArrowRight,
+  X,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function LoginPage() {
+function LoginContent() {
+  const searchParams = useSearchParams();
+  const isVerifiedParam = searchParams.get("verified") === "true";
+  const emailParam = searchParams.get("email") || "";
+
+  const [email, setEmail] = useState(emailParam);
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [showVerifiedModal, setShowVerifiedModal] = useState(isVerifiedParam);
+
+  useEffect(() => {
+    if (emailParam) {
+      setEmail(emailParam);
+    }
+    if (isVerifiedParam) {
+      setShowVerifiedModal(true);
+    }
+  }, [emailParam, isVerifiedParam]);
 
   return (
     <div className="min-h-screen bg-[#0E1528] text-white flex flex-col justify-center items-center p-4 sm:p-6 relative overflow-hidden">
@@ -48,7 +76,7 @@ export default function LoginPage() {
       />
 
       <div className="w-full max-w-md relative z-10 my-8">
-        {/* Prominent Top Center Clickable Logo with Entrance Animation */}
+        {/* Prominent Top Center Clickable Logo */}
         <motion.div
           initial={{ opacity: 0, y: -25, scale: 0.92 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -75,6 +103,18 @@ export default function LoginPage() {
             </span>
           </Link>
         </motion.div>
+
+        {/* Verified Notification Banner (if verified param present) */}
+        {isVerifiedParam && !showVerifiedModal && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-4 p-3.5 rounded-2xl bg-emerald-500/15 border border-emerald-400/30 flex items-center gap-3 text-emerald-300 text-xs font-medium"
+          >
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span>Email verified successfully. Sign in below to continue.</span>
+          </motion.div>
+        )}
 
         {/* Form Container with Scale & Fade-in Mount Animation */}
         <motion.div
@@ -111,9 +151,11 @@ export default function LoginPage() {
                 Work Email
               </label>
               <div className="relative">
-                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                 <input
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="name@company.com"
                   className="w-full pl-10 pr-4 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm transition-all"
                 />
@@ -133,6 +175,8 @@ export default function LoginPage() {
                 <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                 <input
                   type={showPassword ? "text" : "password"}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••••••"
                   className="w-full pl-10 pr-11 py-3 rounded-xl border border-white/15 bg-[#0E1528]/90 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm transition-all"
                 />
@@ -154,8 +198,8 @@ export default function LoginPage() {
             <div className="text-center text-xs text-slate-400 pt-4 border-t border-white/10 flex flex-col gap-2">
               <div>
                 Don&apos;t have an account yet?{" "}
-                <Link href="/#roles" className="text-blue-400 font-bold hover:underline">
-                  Choose a role to register
+                <Link href="/signup" className="text-blue-400 font-bold hover:underline">
+                  Create an account
                 </Link>
               </div>
               <div className="flex items-center justify-center gap-1.5 text-slate-500 text-[11px] pt-1">
@@ -166,6 +210,87 @@ export default function LoginPage() {
           </div>
         </motion.div>
       </div>
+
+      {/* Verified Email Confirmation Modal Popup */}
+      <AnimatePresence>
+        {showVerifiedModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowVerifiedModal(false)}
+              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            />
+
+            {/* Modal Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", duration: 0.5, bounce: 0.3 }}
+              className="relative w-full max-w-md bg-[#131D33] border border-emerald-400/40 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-emerald-950/50 text-center z-10 overflow-hidden"
+            >
+              {/* Top ambient glow */}
+              <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-emerald-500/20 rounded-full blur-2xl pointer-events-none" />
+
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => setShowVerifiedModal(false)}
+                className="absolute top-4 right-4 p-1.5 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Success Badge */}
+              <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-400/50 flex items-center justify-center mx-auto mb-4 text-emerald-400 shadow-lg shadow-emerald-500/20">
+                <CheckCircle2 className="w-9 h-9 animate-in zoom-in-50 duration-300" />
+              </div>
+
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-500/15 border border-emerald-400/30 px-3 py-1 rounded-full mb-3">
+                <Sparkles className="w-3 h-3" />
+                <span>Verification Complete</span>
+              </span>
+
+              <h2 className="text-2xl font-extrabold text-white mb-2">
+                Email Verified Successfully!
+              </h2>
+
+              <p className="text-sm text-slate-300 mb-4 leading-relaxed">
+                Your email address{" "}
+                <span className="font-semibold text-white">
+                  {email || "your account"}
+                </span>{" "}
+                is confirmed. Sign in below to continue directly to your workspace and complete your role setup.
+              </p>
+
+              <Button
+                onClick={() => setShowVerifiedModal(false)}
+                className="w-full bg-emerald-400 hover:bg-emerald-300 text-[#0E1528] py-6 rounded-xl text-base font-bold shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2 hover:scale-[1.02] transition-all"
+              >
+                <span>Continue Sign In</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#0E1528] flex items-center justify-center text-white">
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-blue-500" />
+        </div>
+      }
+    >
+      <LoginContent />
+    </Suspense>
   );
 }

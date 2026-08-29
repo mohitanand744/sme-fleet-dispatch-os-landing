@@ -61,8 +61,8 @@ const tabsData: RoleTabInfo[] = [
         desc: "Eliminate payment disputes with instant invoice packets sent straight to your factoring company.",
       },
     ],
-    ctaLink: "/signup/carrier",
-    ctaText: "Register as Fleet Owner",
+    ctaLink: "/signup?role=carrier",
+    ctaText: "Get Started as Fleet Owner",
     mockup: {
       title: "Fleet Master Ledger • Apex Transport LLC",
       tag: "Live Fleet Analytics",
@@ -100,8 +100,8 @@ const tabsData: RoleTabInfo[] = [
         desc: "Dispatch drivers through Telegram with full load details and pre-calculated deadhead metrics.",
       },
     ],
-    ctaLink: "/signup/dispatcher",
-    ctaText: "Join as Dispatcher",
+    ctaLink: "/signup?role=dispatcher",
+    ctaText: "Get Started as Dispatcher",
     mockup: {
       title: "Active Dispatch Pipeline • Central Desk",
       tag: "Live Load Dispatcher",
@@ -139,8 +139,8 @@ const tabsData: RoleTabInfo[] = [
         desc: "Snap a photo of the signed BOL to immediately trigger your settlement and payroll.",
       },
     ],
-    ctaLink: "/signup/driver",
-    ctaText: "Register as Driver",
+    ctaLink: "/signup?role=driver",
+    ctaText: "Get Started as Driver",
     mockup: {
       title: "Telegram Bot • @SME_Dispatch_Bot",
       tag: "Driver Direct Chat",

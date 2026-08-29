@@ -165,13 +165,13 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4 mb-14"
           >
-            <Link href="#roles">
+            <Link href="/signup">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-[#0E1528] hover:bg-slate-100 shadow-xl shadow-white/10 text-base font-bold px-8 py-6 rounded-2xl group justify-center hover:scale-[1.02] transition-all"
               >
-                <span>Choose Your Account Type</span>
-                <ArrowDown className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform text-[#0E1528]" />
+                <span>Get Started Free</span>
+                <Sparkles className="w-4 h-4 ml-2 text-[#0E1528]" />
               </Button>
             </Link>
             <Link href="/login">
