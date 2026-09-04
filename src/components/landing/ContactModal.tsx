@@ -99,7 +99,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     Message Dispatched!
                   </h3>
                   <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                    Thank you for reaching out, <span className="font-semibold text-white">{formData.name || "there"}</span>. An SME Fleet & Dispatch OS solutions specialist will contact you within 15 minutes.
+                    Thank you for reaching out, <span className="font-semibold text-white">{formData.name || "there"}</span>. An Antcolos solutions specialist will contact you within 15 minutes.
                   </p>
                 </div>
 

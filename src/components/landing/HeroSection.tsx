@@ -79,7 +79,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <Image
           src="/hero_section.png"
-          alt="SME Fleet & Dispatch Operating System"
+          alt="Antcolos Fleet & Dispatch Operating System"
           fill
           priority
           unoptimized

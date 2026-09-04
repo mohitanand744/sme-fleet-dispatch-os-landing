@@ -9,9 +9,9 @@ import { BottomCTA } from "@/components/landing/BottomCTA";
 import { Footer } from "@/components/landing/Footer";
 
 export const metadata = {
-  title: "SME Fleet & Dispatch OS - The Operating System for Fleets & Dispatchers",
+  title: "Antcolos - The Operating System for Fleets & Dispatchers",
   description:
-    "Connect your entire logistics operation. AI rate con parser, one-click dispatch, Telegram driver updates, and automated accounting.",
+    "Connect your entire logistics operation with Antcolos. AI rate con parser, one-click dispatch, Telegram driver updates, and automated accounting.",
 };
 
 export default function LandingPage() {

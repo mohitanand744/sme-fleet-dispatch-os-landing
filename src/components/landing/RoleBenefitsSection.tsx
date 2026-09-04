@@ -142,7 +142,7 @@ const tabsData: RoleTabInfo[] = [
     ctaLink: "/signup?role=driver",
     ctaText: "Get Started as Driver",
     mockup: {
-      title: "Telegram Bot • @SME_Dispatch_Bot",
+      title: "Telegram Bot • @Antcolos_Dispatch_Bot",
       tag: "Driver Direct Chat",
       stats: [
         { label: "Current Trip", value: "840 Miles", change: "On Schedule" },

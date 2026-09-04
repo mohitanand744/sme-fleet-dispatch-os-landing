@@ -52,7 +52,7 @@ export function BentoGridSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-blue-300 text-xs font-semibold uppercase tracking-wider mb-4 backdrop-blur-md">
             <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
-            <span>Legacy Dispatch vs. SME OS</span>
+            <span>Legacy Dispatch vs. Antcolos</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -114,7 +114,7 @@ export function BentoGridSection() {
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-blue-300 bg-blue-500/20 border border-blue-400/30 px-3 py-1 rounded-full flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-                  <span>SME OS Relief</span>
+                  <span>Antcolos Relief</span>
                 </span>
                 <Zap className="w-6 h-6 text-blue-400" />
               </div>
@@ -160,7 +160,7 @@ export function BentoGridSection() {
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/15 border border-emerald-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>SME OS Relief</span>
+                  <span>Antcolos Relief</span>
                 </span>
                 <MessageSquare className="w-6 h-6 text-emerald-400" />
               </div>
@@ -218,7 +218,7 @@ export function BentoGridSection() {
               <div className="flex items-center justify-between mb-4">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-300 bg-indigo-500/20 border border-indigo-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5">
                   <TrendingUp className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>SME OS Relief</span>
+                  <span>Antcolos Relief</span>
                 </span>
                 <DollarSign className="w-6 h-6 text-indigo-400" />
               </div>

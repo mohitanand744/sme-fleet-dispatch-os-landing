@@ -103,12 +103,12 @@ function InviteContent() {
           <Link
             href="/"
             className="group flex flex-col items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl p-2 transition-transform"
-            title="SME Fleet & Dispatch OS - Home"
+            title="Antcolos - Home"
           >
             <div className="relative w-44 sm:w-52 h-20 sm:h-24 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               <Image
                 src="/LOGO.png"
-                alt="SME Fleet & Dispatch OS"
+                alt="Antcolos"
                 width={220}
                 height={100}
                 priority
@@ -116,7 +116,7 @@ function InviteContent() {
               />
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-blue-300 transition-colors">
-              SME Fleet & Dispatch OS
+              Antcolos
             </span>
           </Link>
         </motion.div>
@@ -234,7 +234,7 @@ function InviteContent() {
                 {!isDispatcher && (
                   <div className="flex justify-between">
                     <span className="text-slate-500">Telegram Bot Handle:</span>
-                    <span className="text-emerald-400 font-bold">@SME_Dispatch_Bot</span>
+                    <span className="text-emerald-400 font-bold">@Antcolos_Dispatch_Bot</span>
                   </div>
                 )}
               </div>
@@ -255,7 +255,7 @@ function InviteContent() {
                   >
                     <Button className="w-full bg-emerald-400 text-[#0E1528] hover:bg-emerald-300 py-6 rounded-xl text-base font-bold shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-2">
                       <Send className="w-4 h-4" />
-                      <span>Open @SME_Dispatch_Bot in Telegram</span>
+                      <span>Open @Antcolos_Dispatch_Bot in Telegram</span>
                     </Button>
                   </a>
                 )}

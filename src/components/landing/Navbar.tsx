@@ -51,7 +51,7 @@ export function Navbar() {
             <div className="relative w-16 h-10 p-0.5 flex items-center justify-center text-white group-hover:scale-105 transition-transform duration-200">
               <img
                 src="/LOGO.png"
-                alt="SME Fleet & Dispatch OS"
+                alt="Antcolos"
                 className="w-full h-full overflow-contain"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = "none";

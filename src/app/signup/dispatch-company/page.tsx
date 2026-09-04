@@ -122,21 +122,21 @@ export default function DispatchCompanySignupPage() {
         >
           <Link
             href="/"
-            className="group flex flex-col items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 rounded-3xl p-2 transition-transform"
-            title="SME Fleet & Dispatch OS - Home"
+            className="group flex flex-col items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl p-2 transition-transform"
+            title="Antcolos - Home"
           >
             <div className="relative w-44 sm:w-52 h-20 sm:h-24 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               <Image
                 src="/LOGO.png"
-                alt="SME Fleet & Dispatch OS"
+                alt="Antcolos"
                 width={220}
                 height={100}
                 priority
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-indigo-300 transition-colors">
-              SME Fleet & Dispatch OS
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-blue-300 transition-colors">
+              Antcolos
             </span>
           </Link>
         </motion.div>

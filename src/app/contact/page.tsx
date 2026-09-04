@@ -60,12 +60,12 @@ export default function ContactPage() {
           <Link
             href="/"
             className="group flex flex-col items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl p-2 transition-transform"
-            title="SME Fleet & Dispatch OS - Home"
+            title="Antcolos - Home"
           >
             <div className="relative w-44 sm:w-52 h-20 sm:h-24 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               <Image
                 src="/LOGO.png"
-                alt="SME Fleet & Dispatch OS"
+                alt="Antcolos"
                 width={220}
                 height={100}
                 priority
@@ -73,7 +73,7 @@ export default function ContactPage() {
               />
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-blue-300 transition-colors">
-              SME Fleet & Dispatch OS
+              Antcolos
             </span>
           </Link>
         </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   Message Dispatched!
                 </h2>
                 <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                  Thank you for reaching out, <span className="font-semibold text-white">{formData.name || "there"}</span>. An SME Fleet & Dispatch OS solutions specialist will contact you within 15 minutes.
+                  Thank you for reaching out, <span className="font-semibold text-white">{formData.name || "there"}</span>. An Antcolos solutions specialist will contact you within 15 minutes.
                 </p>
               </div>
 

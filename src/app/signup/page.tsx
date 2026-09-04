@@ -104,12 +104,12 @@ function SignupContent() {
           <Link
             href="/"
             className="group flex flex-col items-center justify-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded-3xl p-2 transition-transform"
-            title="SME Fleet & Dispatch OS - Home"
+            title="Antcolos - Home"
           >
             <div className="relative w-44 sm:w-52 h-20 sm:h-24 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
               <Image
                 src="/LOGO.png"
-                alt="SME Fleet & Dispatch OS"
+                alt="Antcolos"
                 width={220}
                 height={100}
                 priority
@@ -117,7 +117,7 @@ function SignupContent() {
               />
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-slate-300 group-hover:text-blue-300 transition-colors">
-              SME Fleet & Dispatch OS
+              Antcolos
             </span>
           </Link>
         </motion.div>
@@ -221,7 +221,7 @@ function SignupContent() {
                     Create Your Account
                   </h1>
                   <p className="text-slate-300 text-sm mt-1.5 leading-relaxed">
-                    Get started with SME Fleet & Dispatch OS. You will configure your specialized workspace and role inside the panel.
+                    Get started with Antcolos. You will configure your specialized workspace and role inside the panel.
                   </p>
                 </div>
 

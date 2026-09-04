@@ -19,15 +19,17 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fleetdispatchos.com"),
+  metadataBase: new URL("https://antcolos.com"),
   title: {
-    default: "SME Fleet & Dispatch OS | Next-Gen Logistics & Freight Operating System",
-    template: "%s | SME Fleet & Dispatch OS",
+    default: "Antcolos | Next-Gen Logistics & Fleet Dispatch OS",
+    template: "%s | Antcolos",
   },
   description:
-    "An intelligent end-to-end operating system connecting fleet carriers, dispatch agencies, independent dispatchers, and commercial drivers with automated AI rate con parsing, Telegram dispatching, and accounting.",
+    "Antcolos is an intelligent end-to-end fleet and dispatch operating system connecting freight carriers, dispatch agencies, independent dispatchers, and commercial drivers with automated AI rate con parsing, Telegram dispatching, and accounting.",
   keywords: [
-    "SME Fleet OS",
+    "Antcolos",
+    "Antcolos Fleet OS",
+    "Antcolos Dispatch OS",
     "Fleet Dispatch OS",
     "Trucking Software",
     "Logistics Management System",
@@ -43,9 +45,9 @@ export const metadata: Metadata = {
     "Fleet Telematics",
     "Proof of Delivery POD Scanner",
   ],
-  authors: [{ name: "SME Fleet & Dispatch OS Team" }],
-  creator: "SME Fleet & Dispatch OS",
-  publisher: "SME Fleet & Dispatch OS",
+  authors: [{ name: "Antcolos Team" }],
+  creator: "Antcolos",
+  publisher: "Antcolos",
   icons: {
     icon: [
       { url: "/LOGO.png", type: "image/png" },
@@ -57,25 +59,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://fleetdispatchos.com",
-    title: "SME Fleet & Dispatch OS | Next-Gen Logistics Platform",
+    url: "https://antcolos.com",
+    title: "Antcolos | Next-Gen Logistics & Fleet Dispatch Platform",
     description:
-      "Stop running your multimillion-dollar fleet on spreadsheets. Automate rate con extraction, dispatching, and carrier accounting.",
-    siteName: "SME Fleet & Dispatch OS",
+      "Stop running your multimillion-dollar fleet on spreadsheets. Automate rate con extraction, Telegram dispatching, and carrier accounting with Antcolos.",
+    siteName: "Antcolos",
     images: [
       {
         url: "/LOGO.png",
         width: 1200,
         height: 630,
-        alt: "SME Fleet & Dispatch OS Logo",
+        alt: "Antcolos Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SME Fleet & Dispatch OS",
+    title: "Antcolos",
     description:
-      "Intelligent logistics operating system connecting carriers, dispatch agencies, and commercial drivers.",
+      "Intelligent logistics & fleet operating system connecting carriers, dispatch agencies, and commercial drivers.",
     images: ["/LOGO.png"],
   },
   robots: {

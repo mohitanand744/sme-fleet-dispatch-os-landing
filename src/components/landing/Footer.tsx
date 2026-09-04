@@ -16,14 +16,14 @@ export function Footer() {
               <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-[#131D33] border border-white/15 flex items-center justify-center text-white shadow-md">
                 <Image
                   src="/LOGO.png"
-                  alt="SME Fleet & Dispatch OS"
+                  alt="Antcolos"
                   width={40}
                   height={40}
                   className="w-full h-full object-cover"
                 />
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
-                SME Fleet & Dispatch OS
+                Antcolos
               </span>
             </div>
             <p className="text-sm text-slate-400 max-w-md leading-relaxed">
@@ -96,7 +96,7 @@ export function Footer() {
 
         {/* Bottom copyright line */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {currentYear} SME Fleet & Dispatch OS. All rights reserved.</p>
+          <p>© {currentYear} Antcolos. All rights reserved.</p>
           <p className="flex items-center gap-1.5 text-slate-400">
             <span>Engineered for mission-critical logistics operations</span>
           </p>
